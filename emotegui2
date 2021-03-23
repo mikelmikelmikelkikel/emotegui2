@@ -19,10 +19,14 @@ local DefaultDance = Instance.new("ImageLabel")
 local EmoteButton_3 = Instance.new("TextButton")
 local Fresh = Instance.new("ImageLabel")
 local EmoteButton_4 = Instance.new("TextButton")
+local Floss = Instance.new("ImageLabel")
+local EmoteButton_5 = Instance.new("TextButton")
+local LoudLaugh = Instance.new("ImageLabel")
+local EmoteButton_6 = Instance.new("TextButton")
 local Title_2 = Instance.new("TextLabel")
 local R15Emotes = Instance.new("ScrollingFrame")
 local TakeTheL_2 = Instance.new("ImageLabel")
-local EmoteButton_5 = Instance.new("TextButton")
+local EmoteButton_7 = Instance.new("TextButton")
 local RigSwitcherButtons = Instance.new("Frame")
 local R6 = Instance.new("ImageButton")
 local R15 = Instance.new("ImageButton")
@@ -30,7 +34,7 @@ local R15 = Instance.new("ImageButton")
 --Properties:
 
 DanceXP.Name = "DanceXP"
-DanceXP.Parent = game.Workspace
+DanceXP.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 DanceXP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
@@ -195,6 +199,50 @@ EmoteButton_4.TextScaled = true
 EmoteButton_4.TextSize = 14.000
 EmoteButton_4.TextWrapped = true
 
+Floss.Name = "Floss"
+Floss.Parent = R6Emotes
+Floss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Floss.BackgroundTransparency = 1.000
+Floss.Position = UDim2.new(0.0364387333, 0, 0.0556686893, 0)
+Floss.Size = UDim2.new(0, 101, 0, 39)
+Floss.Image = "rbxassetid://6533134734"
+
+EmoteButton_5.Name = "EmoteButton"
+EmoteButton_5.Parent = Floss
+EmoteButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_5.BackgroundTransparency = 1.000
+EmoteButton_5.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_5.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_5.ZIndex = 2
+EmoteButton_5.Font = Enum.Font.Arcade
+EmoteButton_5.Text = "Floss"
+EmoteButton_5.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_5.TextScaled = true
+EmoteButton_5.TextSize = 14.000
+EmoteButton_5.TextWrapped = true
+
+LoudLaugh.Name = "LoudLaugh"
+LoudLaugh.Parent = R6Emotes
+LoudLaugh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoudLaugh.BackgroundTransparency = 1.000
+LoudLaugh.Position = UDim2.new(0.517451406, 0, 0.0556686893, 0)
+LoudLaugh.Size = UDim2.new(0, 101, 0, 39)
+LoudLaugh.Image = "rbxassetid://6533134734"
+
+EmoteButton_6.Name = "EmoteButton"
+EmoteButton_6.Parent = LoudLaugh
+EmoteButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_6.BackgroundTransparency = 1.000
+EmoteButton_6.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_6.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_6.ZIndex = 2
+EmoteButton_6.Font = Enum.Font.Arcade
+EmoteButton_6.Text = "Loud Laugh"
+EmoteButton_6.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_6.TextScaled = true
+EmoteButton_6.TextSize = 14.000
+EmoteButton_6.TextWrapped = true
+
 Title_2.Name = "Title"
 Title_2.Parent = MainFrame
 Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -231,19 +279,19 @@ TakeTheL_2.Position = UDim2.new(0.0364387594, 0, 0.00620060228, 0)
 TakeTheL_2.Size = UDim2.new(0, 101, 0, 39)
 TakeTheL_2.Image = "rbxassetid://6533134734"
 
-EmoteButton_5.Name = "EmoteButton"
-EmoteButton_5.Parent = TakeTheL_2
-EmoteButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EmoteButton_5.BackgroundTransparency = 1.000
-EmoteButton_5.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
-EmoteButton_5.Size = UDim2.new(0, 99, 0, 39)
-EmoteButton_5.ZIndex = 2
-EmoteButton_5.Font = Enum.Font.Arcade
-EmoteButton_5.Text = "Take The L"
-EmoteButton_5.TextColor3 = Color3.fromRGB(139, 139, 139)
-EmoteButton_5.TextScaled = true
-EmoteButton_5.TextSize = 14.000
-EmoteButton_5.TextWrapped = true
+EmoteButton_7.Name = "EmoteButton"
+EmoteButton_7.Parent = TakeTheL_2
+EmoteButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_7.BackgroundTransparency = 1.000
+EmoteButton_7.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_7.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_7.ZIndex = 2
+EmoteButton_7.Font = Enum.Font.Arcade
+EmoteButton_7.Text = "Take The L"
+EmoteButton_7.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_7.TextScaled = true
+EmoteButton_7.TextSize = 14.000
+EmoteButton_7.TextWrapped = true
 
 RigSwitcherButtons.Name = "RigSwitcherButtons"
 RigSwitcherButtons.Parent = MainFrame
@@ -270,7 +318,7 @@ R15.Image = "rbxassetid://6536511549"
 
 -- Scripts:
 
-local function FQOM_fake_script() -- Minimize.MinimizeScript 
+local function EZVNDG_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -281,8 +329,8 @@ local function FQOM_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(FQOM_fake_script)()
-local function KFFS_fake_script() -- Close.CloseScript 
+coroutine.wrap(EZVNDG_fake_script)()
+local function SANJP_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -293,8 +341,8 @@ local function KFFS_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(KFFS_fake_script)()
-local function NEJNYGT_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(SANJP_fake_script)()
+local function UEMY_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -305,8 +353,8 @@ local function NEJNYGT_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(NEJNYGT_fake_script)()
-local function LSHCDQ_fake_script() -- EmoteButton.EmoteScript 
+coroutine.wrap(UEMY_fake_script)()
+local function HFWWLMC_fake_script() -- EmoteButton.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton)
 
 	local Anim = Instance.new("Animation")
@@ -319,7 +367,7 @@ local function LSHCDQ_fake_script() -- EmoteButton.EmoteScript
 		
 		HeadThrowACTIVE = not HeadThrowACTIVE
 		if HeadThrowACTIVE then
-			script.Parent.Image = "rbxassetid://6559255312"
+		
 			while wait() do
 				if track.IsPlaying == false then
 					if HeadThrowACTIVE then
@@ -329,12 +377,12 @@ local function LSHCDQ_fake_script() -- EmoteButton.EmoteScript
 			end
 		else
 			track:Stop()
-			script.Parent.Image = "rbxassetid://6559255431"
+	
 		end
 	end)
 end
-coroutine.wrap(LSHCDQ_fake_script)()
-local function YTPPS_fake_script() -- EmoteButton_2.EmoteScript 
+coroutine.wrap(HFWWLMC_fake_script)()
+local function JGTDWT_fake_script() -- EmoteButton_2.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_2)
 
 	local Anim = Instance.new("Animation")
@@ -347,7 +395,7 @@ local function YTPPS_fake_script() -- EmoteButton_2.EmoteScript
 		
 		HeadThrowACTIVE = not HeadThrowACTIVE
 		if HeadThrowACTIVE then
-			script.Parent.Image = "rbxassetid://6559255312"
+			
 			while wait() do
 				if track.IsPlaying == false then
 					if HeadThrowACTIVE then
@@ -357,12 +405,12 @@ local function YTPPS_fake_script() -- EmoteButton_2.EmoteScript
 			end
 		else
 			track:Stop()
-			script.Parent.Image = "rbxassetid://6559255431"
+		
 		end
 	end)
 end
-coroutine.wrap(YTPPS_fake_script)()
-local function AHUL_fake_script() -- EmoteButton_3.EmoteScript 
+coroutine.wrap(JGTDWT_fake_script)()
+local function ZQUQDE_fake_script() -- EmoteButton_3.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_3)
 
 	local Anim = Instance.new("Animation")
@@ -375,7 +423,7 @@ local function AHUL_fake_script() -- EmoteButton_3.EmoteScript
 		
 		HeadThrowACTIVE = not HeadThrowACTIVE
 		if HeadThrowACTIVE then
-			script.Parent.Image = "rbxassetid://6559255312"
+		
 			while wait() do
 				if track.IsPlaying == false then
 					if HeadThrowACTIVE then
@@ -385,12 +433,12 @@ local function AHUL_fake_script() -- EmoteButton_3.EmoteScript
 			end
 		else
 			track:Stop()
-			script.Parent.Image = "rbxassetid://6559255431"
+			
 		end
 	end)
 end
-coroutine.wrap(AHUL_fake_script)()
-local function DBJJHWS_fake_script() -- EmoteButton_4.EmoteScript 
+coroutine.wrap(ZQUQDE_fake_script)()
+local function NEDYCZI_fake_script() -- EmoteButton_4.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_4)
 
 	local Anim = Instance.new("Animation")
@@ -403,7 +451,7 @@ local function DBJJHWS_fake_script() -- EmoteButton_4.EmoteScript
 		
 		HeadThrowACTIVE = not HeadThrowACTIVE
 		if HeadThrowACTIVE then
-			script.Parent.Image = "rbxassetid://6559255312"
+			
 			while wait() do
 				if track.IsPlaying == false then
 					if HeadThrowACTIVE then
@@ -413,12 +461,68 @@ local function DBJJHWS_fake_script() -- EmoteButton_4.EmoteScript
 			end
 		else
 			track:Stop()
-			script.Parent.Image = "rbxassetid://6559255431"
+		
 		end
 	end)
 end
-coroutine.wrap(DBJJHWS_fake_script)()
-local function NCFC_fake_script() -- RigSwitcherButtons.ClickScript 
+coroutine.wrap(NEDYCZI_fake_script)()
+local function GYGF_fake_script() -- EmoteButton_5.EmoteScript 
+	local script = Instance.new('LocalScript', EmoteButton_5)
+
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://6378754466"
+	local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	local HeadThrowACTIVE = false
+	local HeadThrow = script.Parent
+	
+	HeadThrow.MouseButton1Click:connect(function()
+		
+		HeadThrowACTIVE = not HeadThrowACTIVE
+		if HeadThrowACTIVE then
+		
+			while wait() do
+				if track.IsPlaying == false then
+					if HeadThrowACTIVE then
+						track:Play(.1, 1, 1)
+					end
+				end
+			end
+		else
+			track:Stop()
+			
+		end
+	end)
+end
+coroutine.wrap(GYGF_fake_script)()
+local function FCSUB_fake_script() -- EmoteButton_6.EmoteScript 
+	local script = Instance.new('LocalScript', EmoteButton_6)
+
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://6378755657"
+	local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	local HeadThrowACTIVE = false
+	local HeadThrow = script.Parent
+	
+	HeadThrow.MouseButton1Click:connect(function()
+		
+		HeadThrowACTIVE = not HeadThrowACTIVE
+		if HeadThrowACTIVE then
+		
+			while wait() do
+				if track.IsPlaying == false then
+					if HeadThrowACTIVE then
+						track:Play(.1, 1, 1)
+					end
+				end
+			end
+		else
+			track:Stop()
+			
+		end
+	end)
+end
+coroutine.wrap(FCSUB_fake_script)()
+local function HYKUT_fake_script() -- RigSwitcherButtons.ClickScript 
 	local script = Instance.new('LocalScript', RigSwitcherButtons)
 
 	local r6button = script.Parent.R6
@@ -440,4 +544,4 @@ local function NCFC_fake_script() -- RigSwitcherButtons.ClickScript
 	script.Parent.R6.MouseButton1Click:Connect(leftClick)
 	script.Parent.R15.MouseButton1Click:Connect(leftClick2)
 end
-coroutine.wrap(NCFC_fake_script)()
+coroutine.wrap(HYKUT_fake_script)()
