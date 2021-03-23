@@ -1,0 +1,443 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local DanceXP = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local XPBackground = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Minimize = Instance.new("ImageButton")
+local Close = Instance.new("ImageButton")
+local Maximize = Instance.new("ImageButton")
+local R6Emotes = Instance.new("ScrollingFrame")
+local TakeTheL = Instance.new("ImageLabel")
+local EmoteButton = Instance.new("TextButton")
+local Skipping = Instance.new("ImageLabel")
+local EmoteButton_2 = Instance.new("TextButton")
+local DefaultDance = Instance.new("ImageLabel")
+local EmoteButton_3 = Instance.new("TextButton")
+local Fresh = Instance.new("ImageLabel")
+local EmoteButton_4 = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local R15Emotes = Instance.new("ScrollingFrame")
+local TakeTheL_2 = Instance.new("ImageLabel")
+local EmoteButton_5 = Instance.new("TextButton")
+local RigSwitcherButtons = Instance.new("Frame")
+local R6 = Instance.new("ImageButton")
+local R15 = Instance.new("ImageButton")
+
+--Properties:
+
+DanceXP.Name = "DanceXP"
+DanceXP.Parent = game.Workspace
+DanceXP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = DanceXP
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(0.331970572, 0, 0.26621154, 0)
+MainFrame.Size = UDim2.new(0, 279, 0, 470)
+
+XPBackground.Name = "XPBackground"
+XPBackground.Parent = MainFrame
+XPBackground.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XPBackground.BackgroundTransparency = 1.000
+XPBackground.Position = UDim2.new(-0.336917549, 0, 0.0553192124, 0)
+XPBackground.Size = UDim2.new(0.852141976, 0, 0.759574711, 0)
+XPBackground.Image = "http://www.roblox.com/asset/?id=5838849817"
+XPBackground.ScaleType = Enum.ScaleType.Slice
+XPBackground.SliceCenter = Rect.new(7, 33, 7, 33)
+
+Title.Name = "Title"
+Title.Parent = XPBackground
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.039909564, 0, 0, 0)
+Title.Size = UDim2.new(0, 152, 0, 31)
+Title.ZIndex = 2
+Title.Font = Enum.Font.Arcade
+Title.Text = "dancegobrr.exe"
+Title.TextColor3 = Color3.fromRGB(209, 209, 209)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Minimize.Name = "Minimize"
+Minimize.Parent = XPBackground
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.Position = UDim2.new(0.70758462, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 23, 0, 31)
+Minimize.ZIndex = 15
+Minimize.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Minimize.ImageTransparency = 1.000
+
+Close.Name = "Close"
+Close.Parent = XPBackground
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.887177289, 0, 0, 0)
+Close.Size = UDim2.new(0, 27, 0, 31)
+Close.ZIndex = 15
+Close.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Close.ImageTransparency = 1.000
+
+Maximize.Name = "Maximize"
+Maximize.Parent = XPBackground
+Maximize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Maximize.BackgroundTransparency = 1.000
+Maximize.Position = UDim2.new(0.803367436, 0, 0, 0)
+Maximize.Size = UDim2.new(0, 20, 0, 31)
+Maximize.ZIndex = 15
+Maximize.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Maximize.ImageTransparency = 1.000
+
+R6Emotes.Name = "R6Emotes"
+R6Emotes.Parent = MainFrame
+R6Emotes.Active = true
+R6Emotes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6Emotes.BackgroundTransparency = 1.000
+R6Emotes.BorderSizePixel = 0
+R6Emotes.Position = UDim2.new(-0.336917549, 0, 0.195744753, 0)
+R6Emotes.Size = UDim2.new(0, 237, 0, 291)
+R6Emotes.BottomImage = ""
+R6Emotes.CanvasSize = UDim2.new(0, 0, 4, 0)
+R6Emotes.MidImage = "rbxassetid://6536476069"
+R6Emotes.TopImage = ""
+
+TakeTheL.Name = "TakeTheL"
+TakeTheL.Parent = R6Emotes
+TakeTheL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TakeTheL.BackgroundTransparency = 1.000
+TakeTheL.Position = UDim2.new(0.0364387594, 0, 0.00620060228, 0)
+TakeTheL.Size = UDim2.new(0, 101, 0, 39)
+TakeTheL.Image = "rbxassetid://6533134734"
+
+EmoteButton.Name = "EmoteButton"
+EmoteButton.Parent = TakeTheL
+EmoteButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton.BackgroundTransparency = 1.000
+EmoteButton.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton.ZIndex = 2
+EmoteButton.Font = Enum.Font.Arcade
+EmoteButton.Text = "Take The L"
+EmoteButton.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton.TextScaled = true
+EmoteButton.TextSize = 14.000
+EmoteButton.TextWrapped = true
+
+Skipping.Name = "Skipping"
+Skipping.Parent = R6Emotes
+Skipping.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Skipping.BackgroundTransparency = 1.000
+Skipping.Position = UDim2.new(0.517451406, 0, 0.00620060228, 0)
+Skipping.Size = UDim2.new(0, 101, 0, 39)
+Skipping.Image = "rbxassetid://6533134734"
+
+EmoteButton_2.Name = "EmoteButton"
+EmoteButton_2.Parent = Skipping
+EmoteButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_2.BackgroundTransparency = 1.000
+EmoteButton_2.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_2.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_2.ZIndex = 2
+EmoteButton_2.Font = Enum.Font.Arcade
+EmoteButton_2.Text = "Skipping Happily"
+EmoteButton_2.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_2.TextScaled = true
+EmoteButton_2.TextSize = 14.000
+EmoteButton_2.TextWrapped = true
+
+DefaultDance.Name = "DefaultDance"
+DefaultDance.Parent = R6Emotes
+DefaultDance.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DefaultDance.BackgroundTransparency = 1.000
+DefaultDance.Position = UDim2.new(0.0364387333, 0, 0.0306686871, 0)
+DefaultDance.Size = UDim2.new(0, 101, 0, 39)
+DefaultDance.Image = "rbxassetid://6533134734"
+
+EmoteButton_3.Name = "EmoteButton"
+EmoteButton_3.Parent = DefaultDance
+EmoteButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_3.BackgroundTransparency = 1.000
+EmoteButton_3.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_3.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_3.ZIndex = 2
+EmoteButton_3.Font = Enum.Font.Arcade
+EmoteButton_3.Text = "Default Dance"
+EmoteButton_3.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_3.TextScaled = true
+EmoteButton_3.TextSize = 14.000
+EmoteButton_3.TextWrapped = true
+
+Fresh.Name = "Fresh"
+Fresh.Parent = R6Emotes
+Fresh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fresh.BackgroundTransparency = 1.000
+Fresh.Position = UDim2.new(0.517451406, 0, 0.0306686871, 0)
+Fresh.Size = UDim2.new(0, 101, 0, 39)
+Fresh.Image = "rbxassetid://6533134734"
+
+EmoteButton_4.Name = "EmoteButton"
+EmoteButton_4.Parent = Fresh
+EmoteButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_4.BackgroundTransparency = 1.000
+EmoteButton_4.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_4.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_4.ZIndex = 2
+EmoteButton_4.Font = Enum.Font.Arcade
+EmoteButton_4.Text = "Fresh"
+EmoteButton_4.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_4.TextScaled = true
+EmoteButton_4.TextSize = 14.000
+EmoteButton_4.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = MainFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(-0.336917549, 0, 0.121276595, 0)
+Title_2.Size = UDim2.new(0, 237, 0, 46)
+Title_2.ZIndex = 2
+Title_2.Font = Enum.Font.Arcade
+Title_2.Text = "Funny Emote Pog:"
+Title_2.TextColor3 = Color3.fromRGB(139, 139, 139)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+R15Emotes.Name = "R15Emotes"
+R15Emotes.Parent = MainFrame
+R15Emotes.Active = true
+R15Emotes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R15Emotes.BackgroundTransparency = 1.000
+R15Emotes.BorderSizePixel = 0
+R15Emotes.Position = UDim2.new(-0.336917549, 0, 0.195744753, 0)
+R15Emotes.Size = UDim2.new(0, 237, 0, 291)
+R15Emotes.Visible = false
+R15Emotes.BottomImage = ""
+R15Emotes.CanvasSize = UDim2.new(0, 0, 4, 0)
+R15Emotes.MidImage = "rbxassetid://6536476069"
+R15Emotes.TopImage = ""
+
+TakeTheL_2.Name = "TakeTheL"
+TakeTheL_2.Parent = R15Emotes
+TakeTheL_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TakeTheL_2.BackgroundTransparency = 1.000
+TakeTheL_2.Position = UDim2.new(0.0364387594, 0, 0.00620060228, 0)
+TakeTheL_2.Size = UDim2.new(0, 101, 0, 39)
+TakeTheL_2.Image = "rbxassetid://6533134734"
+
+EmoteButton_5.Name = "EmoteButton"
+EmoteButton_5.Parent = TakeTheL_2
+EmoteButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EmoteButton_5.BackgroundTransparency = 1.000
+EmoteButton_5.Position = UDim2.new(0.00843977183, 0, 0.00611055829, 0)
+EmoteButton_5.Size = UDim2.new(0, 99, 0, 39)
+EmoteButton_5.ZIndex = 2
+EmoteButton_5.Font = Enum.Font.Arcade
+EmoteButton_5.Text = "Take The L"
+EmoteButton_5.TextColor3 = Color3.fromRGB(139, 139, 139)
+EmoteButton_5.TextScaled = true
+EmoteButton_5.TextSize = 14.000
+EmoteButton_5.TextWrapped = true
+
+RigSwitcherButtons.Name = "RigSwitcherButtons"
+RigSwitcherButtons.Parent = MainFrame
+RigSwitcherButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RigSwitcherButtons.BackgroundTransparency = 1.000
+RigSwitcherButtons.Position = UDim2.new(-0.336917549, 0, 0.814893603, 0)
+RigSwitcherButtons.Size = UDim2.new(0, 237, 0, 55)
+
+R6.Name = "R6"
+R6.Parent = RigSwitcherButtons
+R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6.BackgroundTransparency = 1.000
+R6.Position = UDim2.new(0.054852318, 0, 0, 0)
+R6.Size = UDim2.new(0, 100, 0, 44)
+R6.Image = "rbxassetid://6536511628"
+
+R15.Name = "R15"
+R15.Parent = RigSwitcherButtons
+R15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R15.BackgroundTransparency = 1.000
+R15.Position = UDim2.new(0.52320677, 0, 0, 0)
+R15.Size = UDim2.new(0, 100, 0, 44)
+R15.Image = "rbxassetid://6536511549"
+
+-- Scripts:
+
+local function FQOM_fake_script() -- Minimize.MinimizeScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	function leftClick()
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		script.Parent.Parent.Parent.Position = UDim2.new(0.02,-0,0.966,-0)
+	end 
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(FQOM_fake_script)()
+local function KFFS_fake_script() -- Close.CloseScript 
+	local script = Instance.new('LocalScript', Close)
+
+	function leftClick()
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ShutdownSound"):Play()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(KFFS_fake_script)()
+local function NEJNYGT_fake_script() -- Maximize.MaximizeScript 
+	local script = Instance.new('LocalScript', Maximize)
+
+	function leftClick()
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		script.Parent.Parent.Parent.Position = UDim2.new(0.01, 0,0.181, 0)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(NEJNYGT_fake_script)()
+local function LSHCDQ_fake_script() -- EmoteButton.EmoteScript 
+	local script = Instance.new('LocalScript', EmoteButton)
+
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://6559590606"
+	local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	local HeadThrowACTIVE = false
+	local HeadThrow = script.Parent
+	
+	HeadThrow.MouseButton1Click:connect(function()
+		
+		HeadThrowACTIVE = not HeadThrowACTIVE
+		if HeadThrowACTIVE then
+			script.Parent.Image = "rbxassetid://6559255312"
+			while wait() do
+				if track.IsPlaying == false then
+					if HeadThrowACTIVE then
+						track:Play(.1, 1, 1)
+					end
+				end
+			end
+		else
+			track:Stop()
+			script.Parent.Image = "rbxassetid://6559255431"
+		end
+	end)
+end
+coroutine.wrap(LSHCDQ_fake_script)()
+local function YTPPS_fake_script() -- EmoteButton_2.EmoteScript 
+	local script = Instance.new('LocalScript', EmoteButton_2)
+
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://6559594559"
+	local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	local HeadThrowACTIVE = false
+	local HeadThrow = script.Parent
+	
+	HeadThrow.MouseButton1Click:connect(function()
+		
+		HeadThrowACTIVE = not HeadThrowACTIVE
+		if HeadThrowACTIVE then
+			script.Parent.Image = "rbxassetid://6559255312"
+			while wait() do
+				if track.IsPlaying == false then
+					if HeadThrowACTIVE then
+						track:Play(.1, 1, 1)
+					end
+				end
+			end
+		else
+			track:Stop()
+			script.Parent.Image = "rbxassetid://6559255431"
+		end
+	end)
+end
+coroutine.wrap(YTPPS_fake_script)()
+local function AHUL_fake_script() -- EmoteButton_3.EmoteScript 
+	local script = Instance.new('LocalScript', EmoteButton_3)
+
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://6559597248"
+	local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	local HeadThrowACTIVE = false
+	local HeadThrow = script.Parent
+	
+	HeadThrow.MouseButton1Click:connect(function()
+		
+		HeadThrowACTIVE = not HeadThrowACTIVE
+		if HeadThrowACTIVE then
+			script.Parent.Image = "rbxassetid://6559255312"
+			while wait() do
+				if track.IsPlaying == false then
+					if HeadThrowACTIVE then
+						track:Play(.1, 1, 1)
+					end
+				end
+			end
+		else
+			track:Stop()
+			script.Parent.Image = "rbxassetid://6559255431"
+		end
+	end)
+end
+coroutine.wrap(AHUL_fake_script)()
+local function DBJJHWS_fake_script() -- EmoteButton_4.EmoteScript 
+	local script = Instance.new('LocalScript', EmoteButton_4)
+
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://6559601326"
+	local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	local HeadThrowACTIVE = false
+	local HeadThrow = script.Parent
+	
+	HeadThrow.MouseButton1Click:connect(function()
+		
+		HeadThrowACTIVE = not HeadThrowACTIVE
+		if HeadThrowACTIVE then
+			script.Parent.Image = "rbxassetid://6559255312"
+			while wait() do
+				if track.IsPlaying == false then
+					if HeadThrowACTIVE then
+						track:Play(.1, 1, 1)
+					end
+				end
+			end
+		else
+			track:Stop()
+			script.Parent.Image = "rbxassetid://6559255431"
+		end
+	end)
+end
+coroutine.wrap(DBJJHWS_fake_script)()
+local function NCFC_fake_script() -- RigSwitcherButtons.ClickScript 
+	local script = Instance.new('LocalScript', RigSwitcherButtons)
+
+	local r6button = script.Parent.R6
+	local r15button = script.Parent.R15
+	local r6emoteframe = script.Parent.Parent.R6Emotes
+	local r15emoteframe = script.Parent.Parent.R15Emotes
+	
+	
+	function leftClick()
+		r6emoteframe.Visible = true
+		r15emoteframe.Visible = false
+	end
+	
+	function leftClick2()
+		r6emoteframe.Visible = false
+		r15emoteframe.Visible = true
+	end
+	
+	script.Parent.R6.MouseButton1Click:Connect(leftClick)
+	script.Parent.R15.MouseButton1Click:Connect(leftClick2)
+end
+coroutine.wrap(NCFC_fake_script)()
