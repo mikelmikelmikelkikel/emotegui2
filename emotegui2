@@ -30,6 +30,7 @@ local EmoteButton_7 = Instance.new("TextButton")
 local RigSwitcherButtons = Instance.new("Frame")
 local R6 = Instance.new("ImageButton")
 local R15 = Instance.new("ImageButton")
+local DragFrame = Instance.new("Frame")
 
 --Properties:
 
@@ -316,9 +317,16 @@ R15.Position = UDim2.new(0.52320677, 0, 0, 0)
 R15.Size = UDim2.new(0, 100, 0, 44)
 R15.Image = "rbxassetid://6536511549"
 
+DragFrame.Name = "DragFrame"
+DragFrame.Parent = MainFrame
+DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DragFrame.BackgroundTransparency = 1.000
+DragFrame.Position = UDim2.new(-0.336917549, 0, 0.0553192124, 0)
+DragFrame.Size = UDim2.new(0, 161, 0, 30)
+
 -- Scripts:
 
-local function EZVNDG_fake_script() -- Minimize.MinimizeScript 
+local function ALOKKB_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -329,8 +337,8 @@ local function EZVNDG_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(EZVNDG_fake_script)()
-local function SANJP_fake_script() -- Close.CloseScript 
+coroutine.wrap(ALOKKB_fake_script)()
+local function LYHWQI_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -341,8 +349,8 @@ local function SANJP_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(SANJP_fake_script)()
-local function UEMY_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(LYHWQI_fake_script)()
+local function TYXB_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -353,8 +361,8 @@ local function UEMY_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(UEMY_fake_script)()
-local function HFWWLMC_fake_script() -- EmoteButton.EmoteScript 
+coroutine.wrap(TYXB_fake_script)()
+local function SLXEUR_fake_script() -- EmoteButton.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton)
 
 	local Anim = Instance.new("Animation")
@@ -381,8 +389,8 @@ local function HFWWLMC_fake_script() -- EmoteButton.EmoteScript
 		end
 	end)
 end
-coroutine.wrap(HFWWLMC_fake_script)()
-local function JGTDWT_fake_script() -- EmoteButton_2.EmoteScript 
+coroutine.wrap(SLXEUR_fake_script)()
+local function PCLA_fake_script() -- EmoteButton_2.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_2)
 
 	local Anim = Instance.new("Animation")
@@ -409,8 +417,8 @@ local function JGTDWT_fake_script() -- EmoteButton_2.EmoteScript
 		end
 	end)
 end
-coroutine.wrap(JGTDWT_fake_script)()
-local function ZQUQDE_fake_script() -- EmoteButton_3.EmoteScript 
+coroutine.wrap(PCLA_fake_script)()
+local function WSWMO_fake_script() -- EmoteButton_3.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_3)
 
 	local Anim = Instance.new("Animation")
@@ -437,8 +445,8 @@ local function ZQUQDE_fake_script() -- EmoteButton_3.EmoteScript
 		end
 	end)
 end
-coroutine.wrap(ZQUQDE_fake_script)()
-local function NEDYCZI_fake_script() -- EmoteButton_4.EmoteScript 
+coroutine.wrap(WSWMO_fake_script)()
+local function GKZCIJ_fake_script() -- EmoteButton_4.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_4)
 
 	local Anim = Instance.new("Animation")
@@ -465,8 +473,8 @@ local function NEDYCZI_fake_script() -- EmoteButton_4.EmoteScript
 		end
 	end)
 end
-coroutine.wrap(NEDYCZI_fake_script)()
-local function GYGF_fake_script() -- EmoteButton_5.EmoteScript 
+coroutine.wrap(GKZCIJ_fake_script)()
+local function LYZAK_fake_script() -- EmoteButton_5.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_5)
 
 	local Anim = Instance.new("Animation")
@@ -493,8 +501,8 @@ local function GYGF_fake_script() -- EmoteButton_5.EmoteScript
 		end
 	end)
 end
-coroutine.wrap(GYGF_fake_script)()
-local function FCSUB_fake_script() -- EmoteButton_6.EmoteScript 
+coroutine.wrap(LYZAK_fake_script)()
+local function YXRS_fake_script() -- EmoteButton_6.EmoteScript 
 	local script = Instance.new('LocalScript', EmoteButton_6)
 
 	local Anim = Instance.new("Animation")
@@ -521,8 +529,8 @@ local function FCSUB_fake_script() -- EmoteButton_6.EmoteScript
 		end
 	end)
 end
-coroutine.wrap(FCSUB_fake_script)()
-local function HYKUT_fake_script() -- RigSwitcherButtons.ClickScript 
+coroutine.wrap(YXRS_fake_script)()
+local function QIGYVC_fake_script() -- RigSwitcherButtons.ClickScript 
 	local script = Instance.new('LocalScript', RigSwitcherButtons)
 
 	local r6button = script.Parent.R6
@@ -544,4 +552,71 @@ local function HYKUT_fake_script() -- RigSwitcherButtons.ClickScript
 	script.Parent.R6.MouseButton1Click:Connect(leftClick)
 	script.Parent.R15.MouseButton1Click:Connect(leftClick2)
 end
-coroutine.wrap(HYKUT_fake_script)()
+coroutine.wrap(QIGYVC_fake_script)()
+local function RMEOURO_fake_script() -- MainFrame.SoundScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	script.Name = "SoundScript"
+	
+	local ClickSound = Instance.new("Sound")
+	ClickSound.Name = "ClickSound"
+	ClickSound.Parent = script
+	ClickSound.SoundId = "rbxassetid://907514098"
+	
+	local ShutdownSound = Instance.new("Sound")
+	ShutdownSound.Name = "ShutdownSound"
+	ShutdownSound.Parent = script
+	ShutdownSound.SoundId = "rbxassetid://784747919"
+	
+	local ErrorSound = Instance.new("Sound")
+	ErrorSound.Name = "ErrorSound"
+	ErrorSound.Parent = script
+	ErrorSound.SoundId = "rbxassetid://3041205264"
+end
+coroutine.wrap(RMEOURO_fake_script)()
+local function FEJV_fake_script() -- MainFrame.DragScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	script.Name = "DragScript"
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.DragFrame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(FEJV_fake_script)()
